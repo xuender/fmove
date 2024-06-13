@@ -58,8 +58,8 @@ github.com/stretchr/testify v1.8.0/go.mod h1:yNjHg4UonilssWZ8iaSj1OCr/vHnekPRkoO
 github.com/stretchr/testify v1.8.4/go.mod h1:sz/lmYIOXD/1dqDmKjjqLyZ2RngseejIcXlSw2iwfAo=
 github.com/stretchr/testify v1.9.0 h1:HtqpIVDClZ4nwg75+f6Lvsy/wHu+3BoSGCbBAcpTsTg=
 github.com/stretchr/testify v1.9.0/go.mod h1:r2ic/lqez/lEtzL7wO/rwa5dbSLXVDPFyf8C91i36aY=
-github.com/xuender/fmeta v0.0.2 h1:AOaxX01VRSi2vR2bYvsVdLqXuiPteOdMAmguzYb8l3Q=
-github.com/xuender/fmeta v0.0.2/go.mod h1:qKMkqkpt+l8f4TBSyZVaygmqvkBQ6qnUCUXTy1nkSpo=
+github.com/xuender/fmeta v0.0.3 h1:hUOqw+FTM3gNUbYcYOuoIFwSXEGF4rGc52nxBgj1yn8=
+github.com/xuender/fmeta v0.0.3/go.mod h1:qKMkqkpt+l8f4TBSyZVaygmqvkBQ6qnUCUXTy1nkSpo=
 github.com/xuender/kit v1.0.50 h1:R9imQhpgAJuylYzDIAu9SFo96mPkKkPemp1/secIRc8=
 github.com/xuender/kit v1.0.50/go.mod h1:vdc1ekm7xi90f2Jc6Q7pnmZVScEwfrNG0b4TvKst130=
 golang.org/x/crypto v0.0.0-20190308221718-c2843e01d9a2/go.mod h1:djNgcEr1/C05ACkg1iLfiJU5Ep61QUkGW8qpdssI0+w=

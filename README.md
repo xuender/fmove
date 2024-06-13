@@ -16,7 +16,62 @@ go install github.com/xuender/fmove@latest
 
 ## 💡 Usage
 
-TODO
+```shell
+mkdir demo
+cd demo
+echo -e "[[target]]\npath = \"Images\"\ncondition = \"type==image\"\nsubDir = \"yy\"" > fm.toml
+cp ../*.jpg .
+
+fmove
+```
+
+### fm.toml
+
+Move jpeg files to directory target/24/06.
+
+```toml
+[[target]]
+path = "target"
+condition = "type==image && sub=='jpeg'"
+subDir = "yy+'/'+MM"
+```
+
+### Meta
+
+| Keyword   | Description                                      | Example |
+| --------- | ------------------------------------------------ | ------- |
+| type      | File type, such as image, video, audio, archive. | image   |
+| subtype   | File suffix, such as jpeg, mp4, mp3, zip.        | jpeg    |
+| sub       | alias for subtype                                | jpeg    |
+| extension | File extension, such as .jpg, .mp4, .mp3, .zip   | .jpg    |
+| ext       | alias for extension                              | .jpg    |
+| size      | File size, unit is byte.                         | 1024    |
+| width     | Image or Video width, unit is pixel.             | 1920    |
+| height    | Image or Video height, unit is pixel.            | 1080    |
+| duration  | Video or Audio duration, unit is second.         | 60      |
+| dur       | alias for duration                               | 60      |
+| channels  | Audio or Video channels, 1 or 2.                 | 2       |
+| chan      | alias for channels                               | 2       |
+
+
+### Datetime
+
+| Keyword | Description                                     | Example |
+| ------- | ----------------------------------------------- | ------- |
+| yyyy    | Full four-digit year                            | 2024    |
+| yy      | Abbreviated two-digit year                      | 24      |
+| MM      | Month, two digits with leading zeros            | 06      |
+| M       | Month, one digit                                | 6       |
+| dd      | Day of the month, two digits with leading zeros | 13      |
+| d       | Day of the month, one digit                     | 13      |
+| HH      | Hour in 24-hour, two digits with leading zeros  | 16      |
+| H       | Hour in 24-hour, one digit                      | 16      |
+| hh      | Hour in 12-hour, two digits with leading zeros  | 04      |
+| h       | Hour in 12-hour, one digit                      | 4       |
+| mm      | Minute, two digits with leading zeros           | 30      |
+| m       | Minute, one digit                               | 30      |
+| ss      | Second, two digits with leading zeros           | 45      |
+| s       | Second, one digit                               | 45      |
 
 ## 👤 Contributors
 

@@ -9,7 +9,7 @@ toolchain go1.21.4
 require (
 	github.com/expr-lang/expr v1.16.9
 	github.com/pelletier/go-toml/v2 v2.2.2
-	github.com/xuender/fmeta v0.0.2
+	github.com/xuender/fmeta v0.0.3
 	github.com/xuender/kit v1.0.50
 	google.golang.org/protobuf v1.34.2
 )
