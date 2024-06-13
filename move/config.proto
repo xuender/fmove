@@ -1,0 +1,8 @@
+syntax = "proto3";
+package meta;
+option go_package = "./move";
+import "move/target.proto";
+// config message.
+message Config {
+	repeated Target target = 1;
+}
