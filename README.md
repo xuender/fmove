@@ -19,9 +19,20 @@ go install github.com/xuender/fmove@latest
 ```shell
 mkdir demo
 cd demo
-echo -e "[[target]]\npath = \"Images\"\ncondition = \"type==image\"\nsubDir = \"yy\"" > fm.toml
-cp ../*.jpg .
 
+cat <<EOF > fm.toml
+[[target]]
+path = "Images"
+condition = "type==image"
+subDir = "yy"
+
+[[target]]
+path = "Videos"
+condition = "type==video"
+subDir = "yy+'-'+MM"
+EOF
+
+cp ../* .
 fmove
 ```
 
